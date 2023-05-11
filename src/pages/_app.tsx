@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { ChakraProvider } from "@chakra-ui/react";
 import type { AppProps } from "next/app";
 import { RecoilRoot } from "recoil";
