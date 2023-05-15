@@ -20,6 +20,7 @@ import useCommunityData from "../../hooks/useCommunityData";
 type RecommendationsProps = {};
 
 const Recommendations: React.FC<RecommendationsProps> = () => {
+  const IMAGE_URL = "https://img.freepik.com/free-vector/hand-drawn-japanese-illustration-cherry-tree-petals_23-2149601832.jpg?w=900&t=st=1684146689~exp=1684147289~hmac=8e06ad4ef546a60cafdc1a60ca0ae0b6d4cfe42f50c248d5c0fc42d558c2fce4"
   const [communities, setCommunities] = useState<Community[]>([]);
   const [loading, setLoading] = useState(false);
   const { communityStateValue, onJoinLeaveCommunity } = useCommunityData();
@@ -70,7 +71,7 @@ const Recommendations: React.FC<RecommendationsProps> = () => {
         bgImage="url(/images/recCommsArt.png)"
         backgroundSize="cover"
         bgGradient="linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)),
-        url('images/recCommsArt.png')"
+        url(`${IMAGE_URL}`)"
       >
         Top Communities
       </Flex>
