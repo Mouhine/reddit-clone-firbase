@@ -70,8 +70,8 @@ const AuthModal: React.FC<AuthModalProps> = () => {
         >
           {modalState.view === "login" || modalState.view === "signup" ? (
             <>
-              <OAuthButtons />
-              OR
+<!--               <OAuthButtons />
+              OR -->
               <AuthInputs toggleView={toggleView} />
             </>
           ) : (
