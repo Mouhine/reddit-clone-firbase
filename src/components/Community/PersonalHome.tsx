@@ -3,6 +3,7 @@ import { Button, Flex, Icon, Stack, Text } from "@chakra-ui/react";
 import { FaReddit } from "react-icons/fa";
 
 const PersonalHome: React.FC = () => {
+const IMAGE_URL="https://img.freepik.com/free-vector/hand-drawn-collage-background_23-2149590537.jpg?w=900&t=st=1684146830~exp=1684147430~hmac=9777b5788399aa202eaca8b3454b9302938ac5466ca4678a0971abf21449529c"
   return (
     <Flex
       direction="column"
@@ -21,7 +22,7 @@ const PersonalHome: React.FC = () => {
         height="34px"
         borderRadius="4px 4px 0px 0px"
         fontWeight={600}
-        bgImage="url(/images/redditPersonalHome.png)"
+        bgImage="url(${IMAGE_URL})"
         backgroundSize="cover"
       ></Flex>
       <Flex direction="column" p="12px">
