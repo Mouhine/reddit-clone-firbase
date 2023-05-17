@@ -16,7 +16,7 @@ const ActionIcons: React.FC<ActionIconsProps> = () => {
   const { toggleMenuOpen } = useDirectory();
   return (
     <Flex alignItems="center" flexGrow={1}>
-      {/* <Box
+      <Box
         display={{ base: "none", md: "flex" }}
         alignItems="center"
         borderRight="1px solid"
@@ -53,7 +53,7 @@ const ActionIcons: React.FC<ActionIconsProps> = () => {
           <Icon as={IoVideocamOutline} fontSize={22} />
         </Flex>
       </Box>
-      <>
+      {/* <>
         <Flex
           mr={1.5}
           ml={1.5}

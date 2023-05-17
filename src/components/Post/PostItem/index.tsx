@@ -104,7 +104,7 @@ const PostItem: React.FC<PostItemContentProps> = ({
           as={
             userVoteValue === 1 ? IoArrowUpCircleSharp : IoArrowUpCircleOutline
           }
-          color={userVoteValue === 1 ? "brand.100" : "gray.400"}
+          color={userVoteValue === 1 ? "blue.300" : "gray.400"}
           fontSize={22}
           cursor="pointer"
           onClick={(event) => onVote(event, post, 1, post.communityId)}
