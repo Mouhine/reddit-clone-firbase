@@ -94,10 +94,11 @@ const PostItem: React.FC<PostItemContentProps> = ({
       <Flex
         direction="column"
         align="center"
-        bg={singlePostView ? "none" : "gray.100"}
+        bg={singlePostView ? "none" : "brand.100"}
         p={2}
         width="40px"
         borderRadius={singlePostView ? "0" : "3px 0px 0px 3px"}
+        color="white"
       >
         <Icon
           as={
